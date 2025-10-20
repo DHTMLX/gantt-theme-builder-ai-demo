@@ -1,0 +1,41 @@
+name: Build & Deploy Gantt Theme Builder Demo
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  PROJECT_NAME: gantt-theme-builder-ai-demo
+
+jobs:
+  build-and-push:
+    name: Build & Push Docker Images
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Login to Docker registry
+        run: echo "${{ secrets.DOCKER_REGISTRY_PASSWORD }}" | docker login "${{ secrets.DOCKER_REGISTRY_URL }}" -u "${{ secrets.DOCKER_REGISTRY_USERNAME }}" --password-stdin
+
+      - name: Build and push backend image
+        run: |
+          docker build -t ${{ secrets.DOCKER_REGISTRY_URL }}/${{ github.actor }}/gantt-theme-builder-backend:main -f backend/Dockerfile ./backend
+          docker push ${{ secrets.DOCKER_REGISTRY_URL }}/${{ github.actor }}/gantt-theme-builder-backend:main
+
+      - name: Build and push frontend image
+        run: |
+          docker build -t ${{ secrets.DOCKER_REGISTRY_URL }}/${{ github.actor }}/gantt-theme-builder-frontend:main -f frontend/Dockerfile ./frontend
+          docker push ${{ secrets.DOCKER_REGISTRY_URL }}/${{ github.actor }}/gantt-theme-builder-frontend:main
+
+  deploy:
+    name: Deploy to Production Server
+    runs-on: ubuntu-latest
+    needs: build-and-push
+
+    steps:
+      - name: Trigger remote webhook
+        run: |
+          curl -s "${{ secrets.WEBHOOK_URL }}?token=${{ secrets.RESTART_HOOK_TOKEN }}&project=${{ env.PROJECT_NAME }}&branch=main"
