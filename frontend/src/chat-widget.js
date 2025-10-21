@@ -66,7 +66,7 @@ export const initChat = ({ socket, runCommand, getTheme, getConfigs }) => {
     chatWidgetContainer.dataset.id = '0';
 
     chatWidgetContainer.innerHTML = `
-      <div id="chat-popup" class="absolute -bottom-5 right-0 h-full bg-white rounded-md shadow-md flex flex-col transition-all">
+      <div id="chat-popup" class="relative left-0 bottom-0 h-full w-full bg-white rounded-md shadow-md flex flex-col transition-all">
         <div id="chat-header" class="flex justify-between items-center p-4 bg-gray-800 text-white rounded-t-md">
           <h3 class="m-0 text-lg">DHX Assistant</h3>
            <button data-micromodal-trigger="modal-1" class="help-btn">?</button>
