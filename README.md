@@ -55,12 +55,12 @@ the chatbot sends the request to the LLM, which responds with a set of CSS varia
 
 ---
 
-## Quick start (with Docker)
+## Quick start
 
 ### Option 1: Production mode (Docker)
 
 ```bash
-git clone https://github.com/DHTMLX/%REPO%.git
+git clone https://github.com/DHTMLX/gantt-theme-builder-ai-demo.git
 cd ai-theme-builder-demo
 cp .env.example .env
 # Edit .env with your API keys
@@ -74,7 +74,7 @@ Open http://localhost in your browser. The frontend runs on port 80, backend on 
 Run with hot-reload for development:
 
 ```bash
-git clone https://github.com/DHTMLX/%REPO%.git
+git clone https://github.com/DHTMLX/gantt-theme-builder-ai-demo.git
 cd ai-theme-builder-demo
 cp .env.dev.example .env
 # Edit .env with your API keys
@@ -89,7 +89,7 @@ If you prefer running locally without Docker:
 
 ```bash
 npm install
-cp .env.example .env
+cp .env.dev.example .env
 # Edit .env with your API keys
 
 npm run dev:backend    # http://localhost:3001
@@ -106,12 +106,12 @@ OPENAI_API_KEY=YOUR_OPENAI_API_KEY
 OPENAI_BASE_URL=YOUR_OPENAI_BASE_URL
 
 # Production mode (docker-compose.yml)
-VITE_SOCKET_URL_PROD=http://localhost:3001
-FRONTEND_ORIGIN_PROD=http://localhost
+VITE_SOCKET_URL_DOCKER=http://localhost:3001
+FRONTEND_ORIGIN_DOCKER=http://localhost
 
 # Development mode (docker-compose.dev.yml)
-VITE_SOCKET_URL_DEV=http://localhost:3001
-FRONTEND_ORIGIN_DEV=http://localhost:3000
+VITE_SOCKET_URL_DOCKER=http://localhost:3001
+FRONTEND_ORIGIN_DOCKER=http://localhost:3000
 ```
 
 ## Repo structure:
@@ -148,6 +148,7 @@ backend/
 docker-compose.yml
 docker-compose.dev.yml
 .env.example
+.env.dev.example
 package.json
 README.md
 .gitignore
