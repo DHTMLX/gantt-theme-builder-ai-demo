@@ -20,15 +20,19 @@ jobs:
       - name: Login to Docker registry
         run: echo "${{ secrets.DOCKER_REGISTRY_PASSWORD }}" | docker login "${{ secrets.DOCKER_REGISTRY_URL }}" -u "${{ secrets.DOCKER_REGISTRY_USERNAME }}" --password-stdin
 
+      - name: Set lowercase username
+        id: lowercase-username
+        run: echo "USERNAME=$(echo '${{ github.actor }}' | tr '[:upper:]' '[:lower:]')" >> $GITHUB_ENV
+
       - name: Build and push backend image
         run: |
-          docker build -t ${{ secrets.DOCKER_REGISTRY_URL }}/${{ github.actor }}/gantt-theme-builder-backend:main -f backend/Dockerfile ./backend
-          docker push ${{ secrets.DOCKER_REGISTRY_URL }}/${{ github.actor }}/gantt-theme-builder-backend:main
+          docker build -t ${{ secrets.DOCKER_REGISTRY_URL }}/${USERNAME}/gantt-theme-builder-backend:main -f backend/Dockerfile ./backend
+          docker push ${{ secrets.DOCKER_REGISTRY_URL }}/${USERNAME}/gantt-theme-builder-backend:main
 
       - name: Build and push frontend image
         run: |
-          docker build -t ${{ secrets.DOCKER_REGISTRY_URL }}/${{ github.actor }}/gantt-theme-builder-frontend:main -f frontend/Dockerfile ./frontend
-          docker push ${{ secrets.DOCKER_REGISTRY_URL }}/${{ github.actor }}/gantt-theme-builder-frontend:main
+          docker build -t ${{ secrets.DOCKER_REGISTRY_URL }}/${USERNAME}/gantt-theme-builder-frontend:main -f frontend/Dockerfile ./frontend
+          docker push ${{ secrets.DOCKER_REGISTRY_URL }}/${USERNAME}/gantt-theme-builder-frontend:main
 
   deploy:
     name: Deploy to Production Server
