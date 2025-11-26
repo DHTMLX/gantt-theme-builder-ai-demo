@@ -22,9 +22,13 @@ app.use(express.static("../frontend/dist"));
 
 io.on("connection", (socket) => {
   socket.on("user_msg", async (text) => {
-    const { message } = JSON.parse(text);
+    const { message, theme } = JSON.parse(text);
+    const ganttTheme = `Here is the current gantt theme: ${JSON.stringify(theme)}`;
+    const questionContent = `Here is the question: ${message}`;
     const messages = getMessagesHistoryByClient(socket.id, generateSystemPrompt());
-    messages.push({ role: "user", content: message });
+    messages.push({ role: "user", content: ganttTheme });
+    messages.push({ role: "user", content: questionContent });
+
     const reply = await talkToLLM(messages);
     // if assistant ask additional question
     if (reply.assistant_msg) socket.emit("assistant_msg", reply.assistant_msg);
@@ -81,7 +85,6 @@ Rules for changing the current theme:
 2. Always return the **entire list of variables**, even if only one was changed.
 3. Modify **only** those variables that are explicitly mentioned or clearly implied by the user's message.
 4. If the user says something general (e.g. "make it darker"), update only the most relevant variables, but still preserve all others.
-5. If the current theme is not specified use default values from CSS list and config options
 
 For example:
 If the user says “Make the task background lighter,” you should only change the value of --dhx-gantt-task-background (if that's the relevant variable), and return all others unchanged.
