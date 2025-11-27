@@ -9,7 +9,7 @@ export const schemaList = [
       description:
         `Update the Gantt chart theme. **variables** parameter MUST contain the **current theme**, even if only some are changed. 
         If current theme doesn't have variable according to users question add it. If it exists update. 
-        **Do NOT** omit any variables unless the user explicitly requests a full reset.  **configs** is an optional list of layout/behavior overrides.`,
+        **Do NOT** omit any variables unless the user explicitly requests a full reset.  **configs** is a required list of layout/behavior overrides.`,
       parameters: {
         type: "object",
         properties: {

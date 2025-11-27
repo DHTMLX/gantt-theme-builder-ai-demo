@@ -109,13 +109,13 @@
   },
   {
     "name": "--dhx-gantt-container-background",
-    "description": "Container background (inherits --dhx-gantt-base-colors-background)",
+    "description": "Gantt Container background (inherits --dhx-gantt-base-colors-background)",
     "type": "color",
     "defaultValue": "#FFFFFF"
   },
   {
     "name": "--dhx-gantt-container-color",
-    "description": "Container font color (inherits text-base)",
+    "description": "Gantt Container font color (inherits text-base)",
     "type": "color",
     "defaultValue": "#23272A"
   },
@@ -471,7 +471,7 @@
     "name": "--dhx-gantt-lightbox-title-font-size",
     "description": "Font size of the lightbox title/header",
     "type": "size",
-    "defaultValue": "calc(14px + 2px)"
+    "defaultValue": "16px"
   },
   {
     "name": "--dhx-gantt-info-background",
@@ -632,22 +632,26 @@
   {
     "name": "--dhx-gantt-btn-outline-border-color-disabled",
     "description": "Border color for disabled outline-style buttons (when outline button is disabled)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#AAAAAA"
   },
   {
     "name": "--dhx-gantt-btn-outline-color-disabled",
     "description": "Text (icon) color for disabled outline-style buttons",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#AAAAAA"
   },
   {
     "name": "--dhx-gantt-btn-outline-background-disabled",
     "description": "Background color for disabled outline-style buttons",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#AAAAAA"
   },
   {
     "name": "--dhx-gantt-btn-outline-border-active",
     "description": "Border color for active (pressed) state of outline-style buttons",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "transparent"
   },
   {
     "name": "--dhx-gantt-btn-order",
@@ -701,7 +705,7 @@
     "name": "--dhx-gantt-caption-font-size",
     "description": "Font size for captions and labels. Inherited from Font size (--dhx-gantt-font-size)",
     "type": "size",
-    "defaultValue": "calc(14px - 2px)"
+    "defaultValue": "12px"
   },
   {
     "name": "--dhx-gantt-base-padding",
@@ -743,7 +747,7 @@
     "name": "--dhx-gantt-heading-font-size",
     "description": "Font size of headings inside lightbox or modal. Inherited from Font size (--dhx-gantt-font-size)",
     "type": "size",
-    "defaultValue": "calc(14px + 2px)"
+    "defaultValue": "16px"
   },
   {
     "name": "--dhx-gantt-heading-font-weight",
@@ -796,6 +800,7 @@
   {
     "name": "--dhx-gantt-scheduled-summary-bracket-size",
     "description": "Size of scheduled summary bracket border (e.g. border-width values)",
-    "type": "size"
+    "type": "size",
+    "defaultValue": "8px"
   }
 ]
