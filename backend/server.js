@@ -22,12 +22,9 @@ app.use(express.static("../frontend/dist"));
 
 io.on("connection", (socket) => {
   socket.on("user_msg", async (text) => {
-    const { message, theme } = JSON.parse(text);
-    const ganttTheme = `Here is the current gantt theme: ${JSON.stringify(theme)}`;
-    const questionContent = `Here is the question: ${message}`;
+    const { message } = JSON.parse(text);
     const messages = getMessagesHistoryByClient(socket.id, generateSystemPrompt());
-    messages.push({ role: "user", content: ganttTheme });
-    messages.push({ role: "user", content: questionContent });
+    messages.push({ role: "user", content: message });
 
     const reply = await talkToLLM(messages);
     // if assistant ask additional question
@@ -42,7 +39,7 @@ io.on("connection", (socket) => {
       messages.push({
         role: "tool",
         tool_call_id: reply.tool_call_id,
-        content: reply.content ?? "",
+        content: `current_theme succesfully set: ${reply.current_theme}`,
       });
       socket.emit("tool_call", reply.call);
     } 
@@ -82,9 +79,19 @@ When changing the current theme in some way (for example, making the task bars l
 
 Rules for changing the current theme:
 1. **Never** delete, omit, or reorder existing variables from the theme (key and value must mot change inside variables).
-2. Always return the **entire list of variables**, even if only one was changed.
-3. Modify **only** those variables that are explicitly mentioned or clearly implied by the user's message.
-4. If the user says something general (e.g. "make it darker"), update only the most relevant variables, but still preserve all others.
+2. Modify **only** those variables that are explicitly mentioned or clearly implied by the user's message.
+3. If the user says something general (e.g. "make it darker"), update only the most relevant variables, but still preserve all others.
+4. **ALWAYS** Before call "set_theme" check if in your history there is a previous 'current_theme'.
+5. **ALWAYS** After 'reset_theme' clean theme history, current_theme variables and config should be empty.
+
+**CRITICAL: Current theme state is stored in your conversation history as 'tool' role messages from previous set_theme calls. 
+ALWAYS check recent history for the latest 'current_theme' before calling set_theme again. Reference exact variable values from those tool responses when modifying the theme.**
+
+**MANDATORY**: When calling "set_theme", ALWAYS include the COMPLETE current_theme object:
+1. Parse latest 'tool' message content as JSON to get existing current_theme
+2. Copy ALL variables unchanged, modify only requested ones
+3. Output FULL object in arguments: {"--var1": "val1", "--var2": "val2", ...}
+Example: If current_theme has 10 vars and user changes 1, return all 10.
 
 For example:
 If the user says “Make the task background lighter,” you should only change the value of --dhx-gantt-task-background (if that's the relevant variable), and return all others unchanged.
@@ -122,6 +129,9 @@ async function talkToLLM(request) {
       : "",
     tool_call_id: msg.tool_calls ? msg.tool_calls[0].id : "",
     tool_calls: msg.tool_calls ? msg.tool_calls : "",
+    current_theme: toolCall
+      ? toolCall.function.arguments
+      : ""
   };
 }
 
