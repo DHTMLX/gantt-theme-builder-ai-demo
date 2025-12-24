@@ -2,677 +2,805 @@
   {
     "name": "--dhx-gantt-font-family",
     "description": "Font family used in the chart",
-    "type": "font"
+    "type": "font",
+    "defaultValue": "Inter, Helvetica, Arial, sans-serif"
   },
   {
     "name": "--dhx-gantt-font-size",
     "description": "Base font size (e.g. \"14px\")",
-    "type": "size"
+    "type": "size",
+    "defaultValue": "14px"
   },
   {
     "name": "--dhx-gantt-base-colors-white",
     "description": "Pure white base color",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#FFFFFF"
   },
   {
     "name": "--dhx-gantt-base-colors-select",
     "description": "Background for selected elements",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#E0E5F3"
   },
   {
     "name": "--dhx-gantt-base-colors-hover-color",
     "description": "Hover state background color",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#e0e0e0"
   },
   {
     "name": "--dhx-gantt-base-colors-border-light",
     "description": "Light border color",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#F0F0F0"
   },
   {
     "name": "--dhx-gantt-base-colors-border",
     "description": "Default border color",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#DFE0E1"
   },
   {
     "name": "--dhx-gantt-base-colors-icons",
     "description": "Color for icon elements",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#A1A4A6"
   },
   {
     "name": "--dhx-gantt-base-colors-disabled",
     "description": "Background for disabled elements",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#E9E9E9"
   },
   {
     "name": "--dhx-gantt-base-colors-text-light",
     "description": "Lighter text color (secondary labels)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#555D63"
   },
   {
     "name": "--dhx-gantt-base-colors-text-base",
     "description": "Primary text color",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#23272A"
   },
   {
     "name": "--dhx-gantt-base-colors-text-on-fill",
     "description": "Text color on filled backgrounds (like tasks)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "rgba(255, 255, 255, .9)"
   },
   {
     "name": "--dhx-gantt-base-colors-background",
     "description": "Base background color",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#FFFFFF"
   },
   {
     "name": "--dhx-gantt-base-colors-background-alt",
     "description": "Alternate background color",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#F2F2F2"
   },
   {
     "name": "--dhx-gantt-base-colors-primary",
     "description": "Primary highlight color (buttons, accents)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#537CFA"
   },
   {
     "name": "--dhx-gantt-base-colors-warning",
     "description": "Warning highlight color",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#FAB936"
   },
   {
     "name": "--dhx-gantt-base-colors-error",
     "description": "Error/danger highlight color",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#E3334E"
   },
   {
     "name": "--dhx-gantt-base-colors-success",
     "description": "Success highlight color",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#1BC297"
   },
   {
     "name": "--dhx-gantt-container-background",
-    "description": "Container background (inherits --dhx-gantt-base-colors-background)",
-    "type": "color"
+    "description": "Gantt Container background (inherits --dhx-gantt-base-colors-background)",
+    "type": "color",
+    "defaultValue": "#FFFFFF"
   },
   {
     "name": "--dhx-gantt-container-color",
-    "description": "Container font color (inherits text-base)",
-    "type": "color"
+    "description": "Gantt Container font color (inherits text-base)",
+    "type": "color",
+    "defaultValue": "#23272A"
   },
   {
     "name": "--dhx-gantt-offtime-background",
     "description": "Background for non-working/off-time days",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#F2F2F2"
   },
   {
     "name": "--dhx-gantt-task-blue",
     "description": "Preset gradient for blue task variant. Inherited from Primary color (--dhx-gantt-base-colors-primary)",
-    "type": "gradient"
+    "type": "gradient",
+    "defaultValue": "#537CFA"
   },
   {
     "name": "--dhx-gantt-task-green",
     "description": "Preset gradient for green task variant",
-    "type": "gradient"
+    "type": "gradient",
+    "defaultValue": "#20B56D"
   },
   {
     "name": "--dhx-gantt-task-violet",
     "description": "Preset gradient for violet task variant",
-    "type": "gradient"
+    "type": "gradient",
+    "defaultValue": "#D071EF"
   },
   {
     "name": "--dhx-gantt-task-yellow",
     "description": "Preset gradient for yellow task variant",
-    "type": "gradient"
+    "type": "gradient",
+    "defaultValue": "linear-gradient(180deg, #FFB725 0%, #FFBB25 31.25%, #FAEA27 100%)"
   },
   {
     "name": "--dhx-gantt-task-background",
     "description": "Default background for task bars",
-    "type": "gradient"
+    "type": "gradient",
+    "defaultValue": "#537CFA"
   },
   {
     "name": "--dhx-gantt-task-color",
     "description": "Text color inside task bar. Inherited from Fill text color (--dhx-gantt-base-colors-text-on-fill)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "rgba(255, 255, 255, .9)"
   },
   {
     "name": "--dhx-gantt-project-background",
     "description": "Background for project-level bars",
-    "type": "gradient"
+    "type": "gradient",
+    "defaultValue": "#20B56D"
   },
   {
     "name": "--dhx-gantt-project-color",
     "description": "Text color for project bars. Inherited from Task text color (--dhx-gantt-task-color)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "rgba(255, 255, 255, .9)"
   },
   {
     "name": "--dhx-gantt-task-line-text",
     "description": "Text color for tasks in the grid row",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#23272A"
   },
   {
     "name": "--dhx-gantt-task-row-border",
-
     "description": "Border style for task row",
-    "type": "border"
+    "type": "border",
+    "defaultValue": "1px solid #DFE0E1"
   },
   {
     "name": "--dhx-gantt-task-row-background",
     "description": "Background color of task row. Inherited from Container background (--dhx-gantt-container-background)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#FFFFFF"
   },
   {
     "name": "--dhx-gantt-task-row-background--odd",
     "description": "Alternate row background. Inherited from Container background (--dhx-gantt-container-background)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#FFFFFF"
   },
   {
     "name": "--dhx-gantt-task-marker-color",
     "description": "Color of small markers inside task bar",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#537CFA"
   },
   {
     "name": "--dhx-gantt-tooltip-background",
     "description": "Background color of task/tool-tip popups. Inherited from Base text color (--dhx-gantt-base-colors-text-base)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#23272A"
   },
   {
     "name": "--dhx-gantt-tooltip-color",
     "description": "Text color of tool-tip popups. Inherited from Container background (--dhx-gantt-container-background)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#FFFFFF"
   },
   {
     "name": "--dhx-gantt-link-background",
     "description": "Color of dependency links between tasks. Inherited from Icon color (--dhx-gantt-base-colors-icons)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#A1A4A6"
   },
   {
     "name": "--dhx-gantt-link-background-hover",
     "description": "Link color on hover. Inherited from Font text colors (--dhx-gantt-base-colors-text-light)",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#555D63"
   },
   {
     "name": "--dhx-gantt-link-critical-background",
     "description": "Highlight color for critical-path links",
-    "type": "color"
+    "type": "color",
+    "defaultValue": "#E3334E"
   },
-  [
-    {
-      "name": "--dhx-gantt-grid-body-background",
-      "description": "Background of the grid body area (task rows section)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-grid-scale-background",
-      "description": "Background of the grid header (column scale) section. Inherited from Container background (--dhx-gantt-scale-background)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-grid-scale-color",
-      "description": "Text (label) color in grid header scale. Inherited from Font text colors (--dhx-gantt-base-colors-text-light)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-grid-scale-border-vertical",
-      "description": "Vertical border style between grid header cells",
-      "type": "border"
-    },
-    {
-      "name": "--dhx-gantt-timeline-scale-background",
-      "description": "Background of the timeline scale (date header above chart). Inherited from Scale background (--dhx-gantt-scale-background)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-timeline-scale-color",
-      "description": "Text color for labels in the timeline scale. Inherited from Font text colors (--dhx-gantt-base-colors-text-light)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-timeline-scale-border-vertical",
-      "description": "Vertical border style between timeline scale cells",
-      "type": "border"
-    },
-    {
-      "name": "--dhx-gantt-task-border",
-      "description": "Border style around each task bar (e.g. \"none\", \"1px solid #ccc\")",
-      "type": "border"
-    },
-    {
-      "name": "--dhx-gantt-milestone-background",
-      "description": "Background (fill) for milestone task bars",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-popup-background",
-      "description": "Background color of popup/lightbox dialogs or quick-info elements. Inherited from Container background (--dhx-gantt-container-background)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-popup-color",
-      "description": "Text color inside popup/lightbox dialogs or quick-info. Inherited from Base text color (--dhx-gantt-base-colors-text-base)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-popup-border-radius",
-      "description": "Border-radius applied to popup windows (e.g. date-picker popup)",
-      "type": "size"
-    },
-
-    {
-      "name": "--dhx-gantt-border-radius",
-      "description": "Rounded corners radius for task bars, buttons, popups and other UI elements",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-base-colors-primary-active",
-      "description": "Active state color variant for primary elements (e.g. pressed buttons)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-base-colors-primary-lighter",
-      "description": "Lighter shade of the primary highlight color (used in hover or subtle states)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-base-colors-error-hover",
-      "description": "Hover state color for error elements (e.g. buttons, links)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-base-colors-error-active",
-      "description": "Active (pressed) state color for error elements",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-base-colors-error-lighter",
-      "description": "Lighter shade of the error color, used for hover/secondary backgrounds",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-progress-handle-background",
-      "description": "Background color of draggable handle on task progress bar. Inherited from Icon color (--dhx-gantt-base-colors-icons)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-progress-handle-border",
-      "description": "Border style of draggable handle on task progress bar. Inherited from Border (--dhx-gantt-base-colors-border)",
-      "type": "border"
-    },
-    {
-      "name": "--dhx-gantt-project-progress-color",
-      "description": "CSS variable that defines the color of the progress bar for project-type tasks (those spanning multiple subtasks, rendered with project style). Overrides default progress bar appearance. Inherited from Task progress (--dhx-gantt-task-progress-color)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-link-handle-background",
-      "description": "Background color of drag handle on dependency link endpoints. Inherited from Border (--dhx-gantt-base-colors-border)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-link-handle-background-hover",
-      "description": "Hover background color of drag handle on link endpoints. Inherited from Font text colors (--dhx-gantt-base-colors-text-light)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-link-handle-border",
-      "description": "Border style of drag handle on dependency link endpoints. Inherited from Icon color (--dhx-gantt-base-colors-icons)",
-      "type": "border"
-    },
-    {
-      "name": "--dhx-gantt-link-handle-border-hover",
-      "description": "Hover border style of drag handle on link endpoints. Inherited from Border (--dhx-gantt-base-colors-border)",
-      "type": "border"
-    },
-    {
-      "name": "--dhx-gantt-baseline-background-0",
-      "description": "Background color of baseline bar layer 0",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-baseline-background-1",
-      "description": "Background color of baseline bar layer 1",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-baseline-background-2",
-      "description": "Background color of baseline bar layer 2",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-baseline-background-3",
-      "description": "Background color of baseline bar layer 3",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-baseline-background-4",
-      "description": "Background color of baseline bar layer 4",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-baseline-background-5",
-      "description": "Background color of baseline bar layer 5",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-baseline-background-6",
-      "description": "Background color of baseline bar layer 6",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-baseline-background-7",
-      "description": "Background color of baseline bar layer 7",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-baseline-background-8",
-      "description": "Background color of baseline bar layer 8",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-baseline-background-9",
-      "description": "Background color of baseline bar layer 9",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-lightbox-background",
-      "description": "Background color of the task lightbox dialog. Inherited from Popup background (--dhx-gantt-popup-background)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-lightbox-color",
-      "description": "Text color inside the task lightbox dialog. Inherited from Popup text color (--dhx-gantt-popup-color)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-lightbox-title-background",
-      "description": "Background color of the header/title area inside lightbox. Inherited from Selection (--dhx-gantt-base-colors-select)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-lightbox-title-color",
-      "description": "Text color of the lightbox title/header. Inherited from Lightbox text color (--dhx-gantt-lightbox-color)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-lightbox-title-font-size",
-      "description": "Font size of the lightbox title/header",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-info-background",
-      "description": "Background color of in-chart info/tooltip popups. Inherited from Popup background (--dhx-gantt-popup-background)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-info-color",
-      "description": "Text color inside info/tooltip popups. Inherited from Popup text color (--dhx-gantt-popup-color)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-info-shadow",
-      "description": "Box-shadow used for info popups or tooltip info panels",
-      "type": "shadow"
-    },
-    {
-      "name": "--dhx-gantt-info-border",
-      "description": "Border color of the info popup or tooltip panels",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-modal-background",
-      "description": "Background color for modal dialogs. Inherited from Popup background (--dhx-gantt-popup-background)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-modal-padding",
-      "description": "Padding inside modal dialogs",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-modal-width",
-      "description": "Width of modal dialogs",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-modal-border",
-      "description": "Border width, style and color of modal windows (e.g. 1px solid #000)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-modal-border-radius",
-      "description": "Border-radius for modal windows corners",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-btn-background",
-      "description": "Background color of standard buttons. Inherited from Primary color (--dhx-gantt-base-colors-primary)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-color",
-      "description": "Text color of standard buttons. Inherited from Fill text color (--dhx-gantt-base-colors-text-on-fill)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-border-color",
-      "description": "Border color of standard buttons. Inherited from Primary color (--dhx-gantt-base-colors-primary)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-background-hover",
-      "description": "Hover background color of standard buttons. Inherited from Primary hover (--dhx-gantt-base-colors-primary-hover)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-color-hover",
-      "description": "Hover text color of standard buttons. Inherited from Fill text color (--dhx-gantt-base-colors-text-on-fill)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-border-hover",
-      "description": "Hover border color of standard buttons. Inherited from Primary hover (--dhx-gantt-base-colors-primary-hover)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-background-active",
-      "description": "Active background color of standard buttons. Inherited from Primary selected (--dhx-gantt-base-colors-primary-active)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-color-active",
-      "description": "Active text color of standard buttons. Inherited from Fill text color (--dhx-gantt-base-colors-text-on-fill)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-border-active",
-      "description": "Active border color of standard buttons. Inherited from Primary selected (--dhx-gantt-base-colors-primary-active)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-background",
-      "description": "Background color of outline-style buttons",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-color",
-      "description": "Text color of outline-style buttons. Inherited from Primary color (--dhx-gantt-base-colors-primary)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-border-color",
-      "description": "Border color of outline-style buttons. Inherited from Primary color (--dhx-gantt-base-colors-primary)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-background-hover",
-      "description": "Hover background color of outline-style buttons. Inherited from Outline hover (--dhx-gantt-base-colors-primary-lighter)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-color-hover",
-      "description": "Hover text color of outline-style buttons. Inherited from Primary hover (--dhx-gantt-base-colors-primary-hover)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-border-hover",
-      "description": "Hover border color of outline-style buttons. Inherited from Primary hover (--dhx-gantt-base-colors-primary-hover)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-background-active",
-      "description": "Active background color of outline-style buttons. Inherited from Primary selected (--dhx-gantt-base-colors-primary-active)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-color-active",
-      "description": "Active text color of outline-style buttons. Inherited from Fill text color (--dhx-gantt-base-colors-text-on-fill)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-border-color-disabled",
-      "description": "Border color for disabled outline-style buttons (when outline button is disabled)",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-color-disabled",
-      "description": "Text (icon) color for disabled outline-style buttons",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-background-disabled",
-      "description": "Background color for disabled outline-style buttons",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-outline-border-active",
-      "description": "Border color for active (pressed) state of outline-style buttons",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-btn-order",
-      "description": "Layout direction for button groups (flex-direction), e.g. 'row' or 'column'",
-      "type": "layout"
-    },
-    {
-      "name": "--dhx-gantt-icon-size",
-      "description": "Size (font-size or dimensions) of icons in toolbar or tasks",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-link-handle-offset",
-      "description": "Offset distance of link drag handles from task bar edge",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-link-handle-size",
-      "description": "Size (width/height) of link drag handles",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-control-height",
-      "description": "Height of control elements like toolbar and header",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-regular-font-size",
-      "description": "Default font size for standard text. Inherited from Font size (--dhx-gantt-font-size)",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-regular-font-weight",
-      "description": "Default font weight (e.g. 400, 600)",
-      "type": "weight"
-    },
-    {
-      "name": "--dhx-gantt-regular-line-height",
-      "description": "Default line-height for regular text",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-caption-font-size",
-      "description": "Font size for captions and labels. Inherited from Font size (--dhx-gantt-font-size)",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-base-padding",
-      "description": "General padding applied inside component containers",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-lightbox-padding",
-      "description": "Padding inside the task lightbox dialog",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-lightbox-width",
-      "description": "Width of the task lightbox dialog",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-lightbox-control-border",
-      "description": "Border color of lightbox control elements",
-      "type": "color"
-    },
-    {
-      "name": "--dhx-gantt-lightbox-font-size",
-      "description": "Font-size used in lightbox scheduler controls",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-lightbox-wide-max-width",
-      "description": "Max width of wide lightbox dialogs",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-heading-font-size",
-      "description": "Font size of headings inside lightbox or modal. Inherited from Font size (--dhx-gantt-font-size)",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-heading-font-weight",
-      "description": "Font weight of headings",
-      "type": "weight"
-    },
-    {
-      "name": "--dhx-gantt-important-font-size",
-      "description": "Font size for emphasized or important labels. Inherited from Font size (--dhx-gantt-font-size)",
-      "type": "size"
-    },
-    {
-      "name": "--dhx-gantt-important-font-weight",
-      "description": "Font weight for emphasized labels",
-      "type": "weight"
-    },
-    {
-      "name": "--dhx-gantt-important-line-height",
-      "description": "Line-height used for emphasized or important text elements",
-      "type": "size"
-    },
-
-    {
-      "name": "--dhx-gantt-box-shadow-l",
-      "description": "Large box-shadow value (e.g. for dialogs or modals)",
-      "type": "shadow"
-    },
-    {
-      "name": "--dhx-gantt-box-shadow-m",
-      "description": "Medium box-shadow (e.g. for tooltips or lightboxes)",
-      "type": "shadow"
-    },
-    {
-      "name": "--dhx-gantt-checkbox-height",
-      "description": "Height of checkboxes inside Gantt controls or lightbox",
-      "type": "size"
-    },
-
-    {
-      "name": "--dhx-gantt-default-border",
-      "description": "Default border color/width for general UI elements",
-      "type": "border"
-    },
-    {
-      "name": "--dhx-gantt-scheduled-summary-bracket-size",
-      "description": "Size of scheduled summary bracket border (e.g. border-width values)",
-      "type": "size"
-    }
-  ]
+  {
+    "name": "--dhx-gantt-grid-body-background",
+    "description": "Background of the grid body area (task rows section)",
+    "type": "color",
+    "defaultValue": "transparent"
+  },
+  {
+    "name": "--dhx-gantt-grid-scale-background",
+    "description": "Background of the grid header (column scale) section. Inherited from Container background (--dhx-gantt-scale-background)",
+    "type": "color",
+    "defaultValue": "#FFFFFF"
+  },
+  {
+    "name": "--dhx-gantt-grid-scale-color",
+    "description": "Text (label) color in grid header scale. Inherited from Font text colors (--dhx-gantt-base-colors-text-light)",
+    "type": "color",
+    "defaultValue": "#555D63"
+  },
+  {
+    "name": "--dhx-gantt-grid-scale-border-vertical",
+    "description": "Vertical border style between grid header cells",
+    "type": "border",
+    "defaultValue": "1px solid #F0F0F0"
+  },
+  {
+    "name": "--dhx-gantt-timeline-scale-background",
+    "description": "Background of the timeline scale (date header above chart). Inherited from Scale background (--dhx-gantt-scale-background)",
+    "type": "color",
+    "defaultValue": "#FFFFFF"
+  },
+  {
+    "name": "--dhx-gantt-timeline-scale-color",
+    "description": "Text color for labels in the timeline scale. Inherited from Font text colors (--dhx-gantt-base-colors-text-light)",
+    "type": "color",
+    "defaultValue": "#555D63"
+  },
+  {
+    "name": "--dhx-gantt-timeline-scale-border-vertical",
+    "description": "Vertical border style between timeline scale cells",
+    "type": "border",
+    "defaultValue": "1px solid #F0F0F0"
+  },
+  {
+    "name": "--dhx-gantt-task-border",
+    "description": "Border style around each task bar (e.g. \"none\", \"1px solid #ccc\")",
+    "type": "border",
+    "defaultValue": "none"
+  },
+  {
+    "name": "--dhx-gantt-milestone-background",
+    "description": "Background (fill) for milestone task bars",
+    "type": "color",
+    "defaultValue": "#D071EF"
+  },
+  {
+    "name": "--dhx-gantt-popup-background",
+    "description": "Background color of popup/lightbox dialogs or quick-info elements. Inherited from Container background (--dhx-gantt-container-background)",
+    "type": "color",
+    "defaultValue": "#FFFFFF"
+  },
+  {
+    "name": "--dhx-gantt-popup-color",
+    "description": "Text color inside popup/lightbox dialogs or quick-info. Inherited from Base text color (--dhx-gantt-base-colors-text-base)",
+    "type": "color",
+    "defaultValue": "#23272A"
+  },
+  {
+    "name": "--dhx-gantt-popup-border-radius",
+    "description": "Border-radius applied to popup windows (e.g. date-picker popup)",
+    "type": "size",
+    "defaultValue": "4px"
+  },
+  {
+    "name": "--dhx-gantt-border-radius",
+    "description": "Rounded corners radius for task bars, buttons, popups and other UI elements",
+    "type": "size",
+    "defaultValue": "4px"
+  },
+  {
+    "name": "--dhx-gantt-base-colors-primary-active",
+    "description": "Active state color variant for primary elements (e.g. pressed buttons)",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #537CFA 100%, #000000 16.6%)"
+  },
+  {
+    "name": "--dhx-gantt-base-colors-primary-lighter",
+    "description": "Lighter shade of the primary highlight color (used in hover or subtle states)",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #537CFA 20%, rgba(0, 0, 0, 0) 100%)"
+  },
+  {
+    "name": "--dhx-gantt-base-colors-error-hover",
+    "description": "Hover state color for error elements (e.g. buttons, links)",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #E3334E 100%, #000000 6%)"
+  },
+  {
+    "name": "--dhx-gantt-base-colors-error-active",
+    "description": "Active (pressed) state color for error elements",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #E3334E 100%, #000000 16.6%)"
+  },
+  {
+    "name": "--dhx-gantt-base-colors-error-lighter",
+    "description": "Lighter shade of the error color, used for hover/secondary backgrounds",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #E3334E 20%, rgba(0, 0, 0, 0) 100%)"
+  },
+  {
+    "name": "--dhx-gantt-progress-handle-background",
+    "description": "Background color of draggable handle on task progress bar. Inherited from Icon color (--dhx-gantt-base-colors-icons)",
+    "type": "color",
+    "defaultValue": "#A1A4A6"
+  },
+  {
+    "name": "--dhx-gantt-progress-handle-border",
+    "description": "Border style of draggable handle on task progress bar. Inherited from Border (--dhx-gantt-base-colors-border)",
+    "type": "border",
+    "defaultValue": "#DFE0E1"
+  },
+  {
+    "name": "--dhx-gantt-project-progress-color",
+    "description": "CSS variable that defines the color of the progress bar for project-type tasks (those spanning multiple subtasks, rendered with project style). Overrides default progress bar appearance. Inherited from Task progress (--dhx-gantt-task-progress-color)",
+    "type": "color",
+    "defaultValue": "rgba(0, 0, 0, .15)"
+  },
+  {
+    "name": "--dhx-gantt-link-handle-background",
+    "description": "Background color of drag handle on dependency link endpoints. Inherited from Border (--dhx-gantt-base-colors-border)",
+    "type": "color",
+    "defaultValue": "#DFE0E1"
+  },
+  {
+    "name": "--dhx-gantt-link-handle-background-hover",
+    "description": "Hover background color of drag handle on link endpoints. Inherited from Font text colors (--dhx-gantt-base-colors-text-light)",
+    "type": "color",
+    "defaultValue": "#555D63"
+  },
+  {
+    "name": "--dhx-gantt-link-handle-border",
+    "description": "Border style of drag handle on dependency link endpoints. Inherited from Icon color (--dhx-gantt-base-colors-icons)",
+    "type": "border",
+    "defaultValue": "#A1A4A6"
+  },
+  {
+    "name": "--dhx-gantt-link-handle-border-hover",
+    "description": "Hover border style of drag handle on link endpoints. Inherited from Border (--dhx-gantt-base-colors-border)",
+    "type": "border",
+    "defaultValue": "#DFE0E1"
+  },
+  {
+    "name": "--dhx-gantt-baseline-background-0",
+    "description": "Background color of baseline bar layer 0",
+    "type": "color",
+    "defaultValue": "#00B4FF"
+  },
+  {
+    "name": "--dhx-gantt-baseline-background-1",
+    "description": "Background color of baseline bar layer 1",
+    "type": "color",
+    "defaultValue": "#DF6DE3"
+  },
+  {
+    "name": "--dhx-gantt-baseline-background-2",
+    "description": "Background color of baseline bar layer 2",
+    "type": "color",
+    "defaultValue": "#FF957D"
+  },
+  {
+    "name": "--dhx-gantt-baseline-background-3",
+    "description": "Background color of baseline bar layer 3",
+    "type": "color",
+    "defaultValue": "#25C79D"
+  },
+  {
+    "name": "--dhx-gantt-baseline-background-4",
+    "description": "Background color of baseline bar layer 4",
+    "type": "color",
+    "defaultValue": "#FF6FB0"
+  },
+  {
+    "name": "--dhx-gantt-baseline-background-5",
+    "description": "Background color of baseline bar layer 5",
+    "type": "color",
+    "defaultValue": "#FFC470"
+  },
+  {
+    "name": "--dhx-gantt-baseline-background-6",
+    "description": "Background color of baseline bar layer 6",
+    "type": "color",
+    "defaultValue": "#FDE720"
+  },
+  {
+    "name": "--dhx-gantt-baseline-background-7",
+    "description": "Background color of baseline bar layer 7",
+    "type": "color",
+    "defaultValue": "#47AFD0"
+  },
+  {
+    "name": "--dhx-gantt-baseline-background-8",
+    "description": "Background color of baseline bar layer 8",
+    "type": "color",
+    "defaultValue": "#DA9DFF"
+  },
+  {
+    "name": "--dhx-gantt-baseline-background-9",
+    "description": "Background color of baseline bar layer 9",
+    "type": "color",
+    "defaultValue": "#BEE964"
+  },
+  {
+    "name": "--dhx-gantt-lightbox-background",
+    "description": "Background color of the task lightbox dialog. Inherited from Popup background (--dhx-gantt-popup-background)",
+    "type": "color",
+    "defaultValue": "#FFFFFF"
+  },
+  {
+    "name": "--dhx-gantt-lightbox-color",
+    "description": "Text color inside the task lightbox dialog. Inherited from Popup text color (--dhx-gantt-popup-color)",
+    "type": "color",
+    "defaultValue": "#23272A"
+  },
+  {
+    "name": "--dhx-gantt-lightbox-title-background",
+    "description": "Background color of the header/title area inside lightbox. Inherited from Selection (--dhx-gantt-base-colors-select)",
+    "type": "color",
+    "defaultValue": "#E0E5F3"
+  },
+  {
+    "name": "--dhx-gantt-lightbox-title-color",
+    "description": "Text color of the lightbox title/header. Inherited from Lightbox text color (--dhx-gantt-lightbox-color)",
+    "type": "color",
+    "defaultValue": "#23272A"
+  },
+  {
+    "name": "--dhx-gantt-lightbox-title-font-size",
+    "description": "Font size of the lightbox title/header",
+    "type": "size",
+    "defaultValue": "16px"
+  },
+  {
+    "name": "--dhx-gantt-info-background",
+    "description": "Background color of in-chart info/tooltip popups. Inherited from Popup background (--dhx-gantt-popup-background)",
+    "type": "color",
+    "defaultValue": "#1B1B1C"
+  },
+  {
+    "name": "--dhx-gantt-info-color",
+    "description": "Text color inside info/tooltip popups. Inherited from Popup text color (--dhx-gantt-popup-color)",
+    "type": "color",
+    "defaultValue": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "name": "--dhx-gantt-info-shadow",
+    "description": "Box-shadow used for info popups or tooltip info panels",
+    "type": "shadow",
+    "defaultValue": "0px 4px 24px 0px rgba(44, 47, 60, .36)"
+  },
+  {
+    "name": "--dhx-gantt-info-border",
+    "description": "Border color of the info popup or tooltip panels",
+    "type": "color",
+    "defaultValue": "1px solid #4B4B4B"
+  },
+  {
+    "name": "--dhx-gantt-modal-background",
+    "description": "Background color for modal dialogs. Inherited from Popup background (--dhx-gantt-popup-background)",
+    "type": "color",
+    "defaultValue": "#1B1B1C"
+  },
+  {
+    "name": "--dhx-gantt-modal-padding",
+    "description": "Padding inside modal dialogs",
+    "type": "size",
+    "defaultValue": "16px"
+  },
+  {
+    "name": "--dhx-gantt-modal-width",
+    "description": "Width of modal dialogs",
+    "type": "size",
+    "defaultValue": "320px"
+  },
+  {
+    "name": "--dhx-gantt-modal-border",
+    "description": "Border width, style and color of modal windows (e.g. 1px solid #000)",
+    "type": "color",
+    "defaultValue": "1px solid #4B4B4B"
+  },
+  {
+    "name": "--dhx-gantt-modal-border-radius",
+    "description": "Border-radius for modal windows corners",
+    "type": "size",
+    "defaultValue": "0"
+  },
+  {
+    "name": "--dhx-gantt-btn-background",
+    "description": "Background color of standard buttons. Inherited from Primary color (--dhx-gantt-base-colors-primary)",
+    "type": "color",
+    "defaultValue": "#537CFA"
+  },
+  {
+    "name": "--dhx-gantt-btn-color",
+    "description": "Text color of standard buttons. Inherited from Fill text color (--dhx-gantt-base-colors-text-on-fill)",
+    "type": "color",
+    "defaultValue": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "name": "--dhx-gantt-btn-border-color",
+    "description": "Border color of standard buttons. Inherited from Primary color (--dhx-gantt-base-colors-primary)",
+    "type": "color",
+    "defaultValue": "#537CFA"
+  },
+  {
+    "name": "--dhx-gantt-btn-background-hover",
+    "description": "Hover background color of standard buttons. Inherited from Primary hover (--dhx-gantt-base-colors-primary-hover)",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #537CFA 100%, #000000 6%)"
+  },
+  {
+    "name": "--dhx-gantt-btn-color-hover",
+    "description": "Hover text color of standard buttons. Inherited from Fill text color (--dhx-gantt-base-colors-text-on-fill)",
+    "type": "color",
+    "defaultValue": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "name": "--dhx-gantt-btn-border-hover",
+    "description": "Hover border color of standard buttons. Inherited from Primary hover (--dhx-gantt-base-colors-primary-hover)",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #537CFA 100%, #000000 6%)"
+  },
+  {
+    "name": "--dhx-gantt-btn-background-active",
+    "description": "Active background color of standard buttons. Inherited from Primary selected (--dhx-gantt-base-colors-primary-active)",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #537CFA 100%, #000000 16.6%)"
+  },
+  {
+    "name": "--dhx-gantt-btn-color-active",
+    "description": "Active text color of standard buttons. Inherited from Fill text color (--dhx-gantt-base-colors-text-on-fill)",
+    "type": "color",
+    "defaultValue": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "name": "--dhx-gantt-btn-border-active",
+    "description": "Active border color of standard buttons. Inherited from Primary selected (--dhx-gantt-base-colors-primary-active)",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #537CFA 100%, #000000 16.6%)"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-background",
+    "description": "Background color of outline-style buttons",
+    "type": "color",
+    "defaultValue": "transparent"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-color",
+    "description": "Text color of outline-style buttons. Inherited from Primary color (--dhx-gantt-base-colors-primary)",
+    "type": "color",
+    "defaultValue": "#537CFA"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-border-color",
+    "description": "Border color of outline-style buttons. Inherited from Primary color (--dhx-gantt-base-colors-primary)",
+    "type": "color",
+    "defaultValue": "#537CFA"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-background-hover",
+    "description": "Hover background color of outline-style buttons. Inherited from Outline hover (--dhx-gantt-base-colors-primary-lighter)",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #537CFA 20%, rgba(0, 0, 0, 0) 100%)"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-color-hover",
+    "description": "Hover text color of outline-style buttons. Inherited from Primary hover (--dhx-gantt-base-colors-primary-hover)",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #537CFA 100%, #000000 6%)"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-border-hover",
+    "description": "Hover border color of outline-style buttons. Inherited from Primary hover (--dhx-gantt-base-colors-primary-hover)",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #537CFA 100%, #000000 6%)"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-background-active",
+    "description": "Active background color of outline-style buttons. Inherited from Primary selected (--dhx-gantt-base-colors-primary-active)",
+    "type": "color",
+    "defaultValue": "color-mix(in hsl increasing hue, #537CFA 100%, #000000 16.6%)"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-color-active",
+    "description": "Active text color of outline-style buttons. Inherited from Fill text color (--dhx-gantt-base-colors-text-on-fill)",
+    "type": "color",
+    "defaultValue": "rgba(255, 255, 255, .9)"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-border-color-disabled",
+    "description": "Border color for disabled outline-style buttons (when outline button is disabled)",
+    "type": "color",
+    "defaultValue": "#AAAAAA"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-color-disabled",
+    "description": "Text (icon) color for disabled outline-style buttons",
+    "type": "color",
+    "defaultValue": "#AAAAAA"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-background-disabled",
+    "description": "Background color for disabled outline-style buttons",
+    "type": "color",
+    "defaultValue": "#AAAAAA"
+  },
+  {
+    "name": "--dhx-gantt-btn-outline-border-active",
+    "description": "Border color for active (pressed) state of outline-style buttons",
+    "type": "color",
+    "defaultValue": "transparent"
+  },
+  {
+    "name": "--dhx-gantt-btn-order",
+    "description": "Layout direction for button groups (flex-direction), e.g. 'row' or 'column'",
+    "type": "layout",
+    "defaultValue": "row-reverse"
+  },
+  {
+    "name": "--dhx-gantt-icon-size",
+    "description": "Size (font-size or dimensions) of icons in toolbar or tasks",
+    "type": "size",
+    "defaultValue": "1.5em"
+  },
+  {
+    "name": "--dhx-gantt-link-handle-offset",
+    "description": "Offset distance of link drag handles from task bar edge",
+    "type": "size",
+    "defaultValue": "8px"
+  },
+  {
+    "name": "--dhx-gantt-link-handle-size",
+    "description": "Size (width/height) of link drag handles",
+    "type": "size",
+    "defaultValue": "10px"
+  },
+  {
+    "name": "--dhx-gantt-control-height",
+    "description": "Height of control elements like toolbar and header",
+    "type": "size",
+    "defaultValue": "32px"
+  },
+  {
+    "name": "--dhx-gantt-regular-font-size",
+    "description": "Default font size for standard text. Inherited from Font size (--dhx-gantt-font-size)",
+    "type": "size",
+    "defaultValue": "14px"
+  },
+  {
+    "name": "--dhx-gantt-regular-font-weight",
+    "description": "Default font weight (e.g. 400, 600)",
+    "type": "weight",
+    "defaultValue": "400"
+  },
+  {
+    "name": "--dhx-gantt-regular-line-height",
+    "description": "Default line-height for regular text",
+    "type": "size",
+    "defaultValue": "142%"
+  },
+  {
+    "name": "--dhx-gantt-caption-font-size",
+    "description": "Font size for captions and labels. Inherited from Font size (--dhx-gantt-font-size)",
+    "type": "size",
+    "defaultValue": "12px"
+  },
+  {
+    "name": "--dhx-gantt-base-padding",
+    "description": "General padding applied inside component containers",
+    "type": "size",
+    "defaultValue": "4px"
+  },
+  {
+    "name": "--dhx-gantt-lightbox-padding",
+    "description": "Padding inside the task lightbox dialog",
+    "type": "size",
+    "defaultValue": "12px"
+  },
+  {
+    "name": "--dhx-gantt-lightbox-width",
+    "description": "Width of the task lightbox dialog",
+    "type": "size",
+    "defaultValue": "560px"
+  },
+  {
+    "name": "--dhx-gantt-lightbox-control-border",
+    "description": "Border color of lightbox control elements",
+    "type": "color",
+    "defaultValue": "1px solid #DFE0E1"
+  },
+  {
+    "name": "--dhx-gantt-lightbox-font-size",
+    "description": "Font-size used in lightbox scheduler controls",
+    "type": "size",
+    "defaultValue": "14px"
+  },
+  {
+    "name": "--dhx-gantt-lightbox-wide-max-width",
+    "description": "Max width of wide lightbox dialogs",
+    "type": "size",
+    "defaultValue": "738px"
+  },
+  {
+    "name": "--dhx-gantt-heading-font-size",
+    "description": "Font size of headings inside lightbox or modal. Inherited from Font size (--dhx-gantt-font-size)",
+    "type": "size",
+    "defaultValue": "16px"
+  },
+  {
+    "name": "--dhx-gantt-heading-font-weight",
+    "description": "Font weight of headings",
+    "type": "weight",
+    "defaultValue": "600"
+  },
+  {
+    "name": "--dhx-gantt-important-font-size",
+    "description": "Font size for emphasized or important labels. Inherited from Font size (--dhx-gantt-font-size)",
+    "type": "size",
+    "defaultValue": "14px"
+  },
+  {
+    "name": "--dhx-gantt-important-font-weight",
+    "description": "Font weight for emphasized labels",
+    "type": "weight",
+    "defaultValue": "500"
+  },
+  {
+    "name": "--dhx-gantt-important-line-height",
+    "description": "Line-height used for emphasized or important text elements",
+    "type": "size",
+    "defaultValue": "142%"
+  },
+  {
+    "name": "--dhx-gantt-box-shadow-l",
+    "description": "Large box-shadow value (e.g. for dialogs or modals)",
+    "type": "shadow",
+    "defaultValue": "0px 4px 24px 0px rgba(44, 47, 60, .56)"
+  },
+  {
+    "name": "--dhx-gantt-box-shadow-m",
+    "description": "Medium box-shadow (e.g. for tooltips or lightboxes)",
+    "type": "shadow",
+    "defaultValue": "0px 4px 24px 0px rgba(44, 47, 60, .36)"
+  },
+  {
+    "name": "--dhx-gantt-checkbox-height",
+    "description": "Height of checkboxes inside Gantt controls or lightbox",
+    "type": "size",
+    "defaultValue": "20px"
+  },
+  {
+    "name": "--dhx-gantt-default-border",
+    "description": "Default border color/width for general UI elements",
+    "type": "border",
+    "defaultValue": "1px solid #DFE0E1"
+  },
+  {
+    "name": "--dhx-gantt-scheduled-summary-bracket-size",
+    "description": "Size of scheduled summary bracket border (e.g. border-width values)",
+    "type": "size",
+    "defaultValue": "8px"
+  }
 ]
