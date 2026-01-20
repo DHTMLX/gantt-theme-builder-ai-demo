@@ -1,9 +1,7 @@
 export const demoData = {
   tasks: [
-    // Основной проект
     { id: 1, text: "Website Relaunch", type: "project", start_date: null, duration: 0, progress: 0.3, open: true },
 
-    // Фаза 1: Планирование
     {
       id: 2,
       text: "Planning Phase",
@@ -31,7 +29,6 @@ export const demoData = {
       progress: 1.0,
     },
 
-    // Фаза 2: Дизайн
     {
       id: 11,
       text: "Design Phase",
@@ -60,7 +57,6 @@ export const demoData = {
       progress: 0.0,
     },
 
-    // Фаза 3: Разработка
     {
       id: 21,
       text: "Development Phase",
@@ -90,7 +86,6 @@ export const demoData = {
       progress: 0.0,
     },
 
-    // Фаза 4: Тестирование
     {
       id: 32,
       text: "Testing Phase",
@@ -115,7 +110,6 @@ export const demoData = {
       progress: 0.0,
     },
 
-    // Фаза 5: Деплой
     {
       id: 38,
       text: "Deployment Phase",
