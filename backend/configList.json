@@ -19,7 +19,7 @@
   },
   {
     "name": "bar_height",
-    "description": "Height (pixels) of task bars in the timeline area (e.g. 30)",
+    "description": "Height (pixels) of task bars in the timeline area (e.g. 30), could accept only numbers and 'full' property that will match the 'row_height' config",
     "type": "size",
     "defaultValue": "30"
   },
